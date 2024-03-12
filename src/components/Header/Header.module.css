@@ -1,0 +1,57 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0; /*чтобы растянуть по ширине блок*/
+  color: #fff;
+  background-color: #392350;
+}
+
+.headerContainer {
+  padding: 19px 0;
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  align-items: center;
+  gap: 20px;
+}
+
+.navigationList {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  justify-content: flex-end;
+  transition: color 0.3s ease-in-out;
+}
+
+.navigationLink{
+  align-self: center;
+}
+
+.navigationLink:hover {
+  color:  #C6B6D7;
+}
+
+.loginBtn {
+  justify-self: end;
+display: flex;
+align-items: center;
+}
+
+.loginLink {
+  margin-right: 5px;
+} 
+
+@media (max-width: 768px) {
+  .headerContainer {
+        grid-template-columns: 1fr;
+  }
+
+  .navigationList {
+    justify-content: center;
+  }
+
+  .headerLogo {
+    display: block;
+    margin: 0 auto;
+  }
+}

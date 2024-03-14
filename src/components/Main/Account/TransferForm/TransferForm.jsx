@@ -10,16 +10,12 @@ import style from './TransferForm.module.css';
 
 export const TransferForm = () => {
   const token = useSelector(state => state.auth.token);
-  console.log('token: ', token);
   const dispatch = useDispatch();
   const {id} = useParams();
-  console.log('id: ', id);
   const [showModalError, setShowModalError] = useState(false);
-  console.log('showModalError: ', showModalError);
   const [showModalOk, setShowModalOk] = useState(false);
-  console.log('showModalOk: ', showModalOk);
   const [message, setMessage] = useState('');
-  console.log('message: ', message);
+
   const {
     register,
     handleSubmit,

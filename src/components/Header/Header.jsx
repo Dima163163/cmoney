@@ -9,7 +9,6 @@ import style from './Header.module.css';
 
 export const Header = () => {
   const token = useSelector(state => state.auth.token);
-  console.log('token: ', token);
   const navigate = useNavigate();
   const dispatch = useDispatch();
 

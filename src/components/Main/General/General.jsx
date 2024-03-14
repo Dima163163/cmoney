@@ -18,12 +18,8 @@ export const General = () => {
   const [value, setValue] = useState('');
   const navigate = useNavigate();
   const dispatch = useDispatch();
-  console.log('token: ', token);
-  console.log('accounts: ', accounts);
-  console.log('loading: ', loading);
 
   const handleChange = e => {
-    console.log(e.target.value);
     setValue(e.target.value);
   };
 

@@ -6,11 +6,8 @@ import style from './Rates.module.css';
 
 export const Rates = () => {
   const [rates, setRates] = useState([]);
-  console.log('rates: ', rates);
   const data = [];
-  console.log('data: ', data);
   let count = 0;
-  console.log('count: ', count);
 
   useEffect(() => {
     const ws = new WebSocket(URL_API_WS);

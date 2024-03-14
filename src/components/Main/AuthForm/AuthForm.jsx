@@ -8,9 +8,7 @@ import style from './AuthForm.module.css';
 
 export const AuthForm = () => {
   const [showModal, setShowModal] = useState(false);
-  console.log('showModal: ', showModal);
   const {token} = useSelector(state => state.auth);
-  console.log('token: ', token);
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const {

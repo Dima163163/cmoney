@@ -23,12 +23,9 @@ import style from './Account.module.css';
 export const Account = () => {
   const navigate = useNavigate();
   const {id} = useParams();
-  console.log('id: ', id);
   const dispatch = useDispatch();
   const {account, transactions, loading} = useSelector(state => state.account);
-  console.log('loading: ', loading);
-  console.log('account: ', account);
-  console.log('transactions: ', transactions);
+
   const [value, setValue] = useState('2024');
   const [selectChartData, setSelectChartData] = useState(null);
 

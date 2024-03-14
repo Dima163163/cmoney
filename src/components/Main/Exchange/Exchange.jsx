@@ -17,14 +17,11 @@ import style from './Exchange.module.css';
 
 export const Exchange = () => {
   const token = useSelector(state => state.auth.token);
-  console.log('token: ', token);
   const [showSuccess, setShowSuccess] = useState(false);
   const [showError, setShowError] = useState(false);
   const [message, setMessage] = useState('');
   const {currenciesAll} = useSelector(state => state.currencies);
-  console.log('currenciesAll: ', currenciesAll);
   const {currencyMy} = useSelector(state => state.exchange);
-  console.log('currencyMy: ', currencyMy);
   const dispatch = useDispatch();
   const {
     register,
